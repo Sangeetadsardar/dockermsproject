@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: vinodvanama/projectmovies:latest
+    image: sangeeta25/projectmovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: vinodvanama/projecttrain:latest
+    image: sangeeta25/projecttrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: vinodvanama/projectdth:latest
+    image: sangeeta25/projectdth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: vinodvanama/projectrecharge:latest
+    image: sangeeta25/projectrecharge:latest
     ports:
       - "84:80"
     deploy:
