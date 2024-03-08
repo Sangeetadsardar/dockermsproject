@@ -72,7 +72,7 @@ pipeline {
         }
         stage('push') {
             steps {
-                sh 'docker login -u  -p '
+                sh 'docker login -u sangeeta25 -p $password '
                 sh 'docker push $repo'
             }
         }
